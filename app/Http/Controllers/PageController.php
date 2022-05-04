@@ -11,6 +11,7 @@ class PageController extends Controller
     public function listMovie()
     {
         $myMovies = Movie::all();
+        dd($myMovies);
         return view('moviepage', $myMovies);
     }
 }
