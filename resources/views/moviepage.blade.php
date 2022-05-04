@@ -9,8 +9,8 @@
 <body>
     {{-- TEMPLATE DEI MOVIE --}}
     <h1>questa è la pagina movie</h1>
-        @foreach ($myMovies['origin'] as $movie)
-            <h2>{{ $movie.title }}</h2> 
+        @foreach ($myMovies as $movie)
+            <h2>{{ $movie->title }}</h2> 
         @endforeach
 </body>
 </html>
