@@ -14,10 +14,10 @@
     {{-- TEMPLATE DEI MOVIE --}}
         @foreach ($myMovies as $movie)
         <div class="card">
-            <h2>{{ $movie->title }}</h2> 
-            <h2>{{ $movie->nationality }}</h2> 
-            <h2>{{ $movie->date }}</h2> 
-            <h2>{{ $movie->vote }}</h2>
+            <h2>Title: {{ $movie->title }}</h2> 
+            <h2>Nationality: {{ $movie->nationality }}</h2> 
+            <h3>Data: {{ $movie->date }}</h3> 
+            <h3>Vote: {{ $movie->vote }}</h3>
         </div>
         @endforeach
     </div>
